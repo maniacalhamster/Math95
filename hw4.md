@@ -1,4 +1,4 @@
-Start: 11:17PM
+Start: 11:17PM  
 End: 11:50PM
 
 Spent: 33min
