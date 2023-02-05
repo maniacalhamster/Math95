@@ -35,7 +35,8 @@ base 3: 1 + 2 + 3
 
 ```
 
-base n = ```math
+base n = 
+```math
 \sum_{i=1}^n i
 ```
 
