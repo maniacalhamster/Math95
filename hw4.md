@@ -13,7 +13,7 @@ Figure above has a base of 5
 
 ## Questions
 
-1. You ahve 1176 identical square pieces. Can yo uuse all the pieces to construct a stair-like structure?
+1. You have 1176 identical square pieces. Can you use all the pieces to construct a stair-like structure?
 
 2. Justify any formulas you used while solving part 1
 
@@ -104,6 +104,7 @@ base 6:
 ```
 
 It seems like the general formula for the number of boxes would look like:
+
 $$
 \begin{align*}
 n(n/2 + 1/2) \\
