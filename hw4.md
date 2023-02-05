@@ -35,19 +35,21 @@ base 3: 1 + 2 + 3
 
 ```
 
-base n = $\sum_{i=1}^n i$
+base n = ```math
+\sum_{i=1}^n i
+```
 
 ## Work
 
 Well I know there's a "Series" formula for sums and the derivation goes like so:
 
-$$
+```math
 \begin{align*}
 \sum_{i=1}^n i  &= 0 + 1 + 2 + ...  + n-2 + n-1 + n \\
                 &= (0 + n) + (1 + n-1) + 2 + (n-2) + ...  \\
                 &= n + n + n + ...  \\
 \end{align*}
-$$
+```
 
 Actually wait, I realized this is more intuitive with boxes:
 
@@ -105,14 +107,14 @@ base 6:
 
 It seems like the general formula for the number of boxes would look like:
 
-$$
+```math
 \begin{align*}
 n(n/2 + 1/2) \\
 \\
 = \frac{(n)(n+1)}{2}
 
 \end{align*}
-$$
+```
 
 ---
 
@@ -123,7 +125,7 @@ We just have to check if there is an Integer value N we can plug into the equati
 - we solve for n
 - check if n is a whole number
 
-$$
+```math
 \begin{align*}
 1176    &= \frac{(n)(n+1)}{2}\\
 2352    &= n(n+1)\\
@@ -140,7 +142,7 @@ $$
 \{-98/2, 96/2\}&= n\\
 \{-49, 48\}&= n\\
 \end{align*}
-$$
+```
 
 Looks like n=48 is a valid solution
 
@@ -148,11 +150,11 @@ Looks like n=48 is a valid solution
 
 ## Checking answer
 
-$$
+```math
 \begin{align*}
 48(48+1)/2  &=\\
             &=  48*49/2\\
             &=  24*49\\
             &= 1176
 \end{align*}
-$$
+```
