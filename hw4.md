@@ -163,3 +163,20 @@ Looks like n=48 is a valid solution
             &= 1176
 \end{align*}
 ```
+
+## Part B 
+
+Figured out the algebraic proof:
+
+$$
+\begin{align*}
+    2 \sum_i^n i    &= \sum_i^n i + \sum_i^n i \\
+                    &= (0 + 1 + 2 + ... + n-2 + n-1 + n)\\
+                    &  (n + n-2 + n-2 + ... + 2 + 1 + 0)\\
+                    &= (0+n) + (1+n-1) + (2+n-2) + ... + (n-2+2) + (n-1+1) + (n+0) \\
+                    & \text{There are n+1 terms (0 through n)}\\
+                    &= n + n + n + ... + n + n + n \\
+    2 \sum_i^n i    &= n(n+1)\\
+      \sum_i^n i    &= \frac{n(n+1)}{2}\\
+\end{align*}
+$$
