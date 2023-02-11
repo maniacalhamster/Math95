@@ -52,7 +52,7 @@ $$
 \begin{align*}
 T(b)    &= 4 + \delta(b-1)\times 6(b-1) + \delta(b-2)\times 2(\sum_{i=0}^{b-2} i) \\
         &= 4 + \delta(b-1)\times 6(b-1) + \delta(b-2)\times 2(\frac{(b-2-1)(b-2)}{2}) \\
-        &= 4 + \delta(b-1)\times 6(b-1) + \delta(b-2)\times (b-3)(b-2)) \\
+        &= 4 + \delta(b-1)\times 6(b-1) + \delta(b-2)\times (b-3)(b-2)
 \end{align*}
 $$
 
