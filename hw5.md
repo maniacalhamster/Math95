@@ -4,6 +4,9 @@ Start: 1:30 PM
 End: 2:05 PM
 Time: 35 min
 
+Addendum: +20min to address part B
+Total Time: 55min
+
 > Note: Same stair-like structures from last week, but this time using toothpicks to construct the sides of the stairs
 
 ## Question
@@ -89,3 +92,42 @@ Now we can test (51, 52) to check:
 ## Final Answer
 
 No, we cannot form a stair-like structure with exactly 2628 toothpicks
+
+---
+
+## Part B
+
+```math
+\begin{align*}
+T(0)    &= 4 \\
+T(1)    &= 4 + 2(3) = 10 \\
+\\
+T(2)    &= T(1) + 2(3) + 2(1) = 18 \\
+T(3)    &= T(2) + 2(3) + 2(2) = 28 \\
+T(4)    &= T(3) + 2(3) + 2(3) = 40 \\
+T(5)    &= T(4) + 2(3) + 2(4) = 40 \\
+\\
+&\text{Generalized (for t > 1):} \\
+\\
+T(b)    &= T(b-1) + 2(3) +  2(b-1) \\
+T(b-1)  &= T(b-2) + 2(3) +  2(b-2) \\
+T(b-2)  &= T(b-3) + 2(3) +  2(b-3) \\
+&\text{... and so on continues 'til T(b-x) hits T(1) and T(0)}
+\end{align*}
+```
+
+> Note that for $b > 0$, each $T(b)$ always includes a $2(3)$ term. 
+  - Since we build up $T(b)$ by adding on $T(b-1)$, $T(b-2)$, ... we are essentially adding up all the $2(3)$ terms. 
+  - Since this term only gets added for $b > 0$, we use $\delta(b-1)$ (will be zeroed out for any $b < 1$)
+  - Also since we add up the $2(3)$ for all $b > 0$ in $T(b)$, the number of terms we add up ends up being $b-1$
+
+> Note that for $b > 1$, each $T(b)$ always includes a $2(b-1)$ term.
+  - Since we build up $T(b)$ by adding on $T(b-1)$, $T(b-2)$, ... we are essentially adding up all the $2(b-1)$ terms. 
+  - Since this term only gets added for $b > 1$, we use $\delta(b-2)$ (will be zeroed out for any $b < 2$)
+  - Summing up the $2(b-1)$ terms will look like $\sum_{i=0}^{b-1} i$
+
+Thus the equation used for the number of toothpicks in a base (b) stair structure is derived:
+
+```math
+T(b) = 4 + \delta(b-1)\times 6(b-1) + \delta(b-2)\times 2(\sum_{i=0}^{b-2} i)
+```
