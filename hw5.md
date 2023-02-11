@@ -119,12 +119,18 @@ T(b-2)  &= T(b-3) + 2(3) +  2(b-3) \\
 > Note that for $b > 0$, each $T(b)$ always includes a $2(3)$ term. 
   - Since we build up $T(b)$ by adding on $T(b-1)$, $T(b-2)$, ... we are essentially adding up all the $2(3)$ terms. 
   - Since this term only gets added for $b > 0$, we use $\delta(b-1)$ (will be zeroed out for any $b < 1$)
-  - Also since we add up the $2(3)$ for all $b > 0$ in $T(b)$, the number of terms we add up ends up being $b-1$
+  - Also since we add up the $2(3)$ for all $b > 0$ in $T(b)$, the sum of the terms ends up being:
+  ```math
+  2(3) (b-1)
+  ```
 
 > Note that for $b > 1$, each $T(b)$ always includes a $2(b-1)$ term.
   - Since we build up $T(b)$ by adding on $T(b-1)$, $T(b-2)$, ... we are essentially adding up all the $2(b-1)$ terms. 
   - Since this term only gets added for $b > 1$, we use $\delta(b-2)$ (will be zeroed out for any $b < 2$)
-  - Summing up the $2(b-1)$ terms will look like $\sum_{i=0}^{b-1} i$
+  - Summing up the $2(b-1)$ terms ends up being:
+  ```math
+  \sum_{i=0}^{b-2} i
+  ```
 
 Thus the equation used for the number of toothpicks in a base (b) stair structure is derived:
 
