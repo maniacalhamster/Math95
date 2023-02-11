@@ -48,26 +48,26 @@ In other words, for the current base, we introduced 2(b-1) toothpicks for the in
 
 Formula for the number of toothpicks used to generate a (b) base structure would look like so:
 
-$$
+```math
 \begin{align*}
 T(b)    &= 4 + \delta(b-1)\times 6(b-1) + \delta(b-2)\times 2(\sum_{i=0}^{b-2} i) \\
         &= 4 + \delta(b-1)\times 6(b-1) + \delta(b-2)\times 2(\frac{(b-2-1)(b-2)}{2}) \\
         &= 4 + \delta(b-1)\times 6(b-1) + \delta(b-2)\times (b-3)(b-2)
 \end{align*}
-$$
+```
 
 Where the dirac-delta equation is defined as:
-$$
+```math
 \delta(x) = \begin{cases}
                 x\leq 0 & 0\\
                 x > 0   & 1
     \end{cases}
-$$
+```
 
 ## Work
 
 We need to check if there exists a (b) such that $T(b) = 2628$:
-$$
+```math
 \begin{align*}
 2628    &= 4 + 6(b-1) + (b-3)(b-2) \\
         &= 4 + 6b -6 + b^2 -5b+6 \\
@@ -78,13 +78,13 @@ $$
 \sqrt{2624}  &\approx b\\
 51.22        &\approx b
 \end{align*}
-$$
+```
 
 Now we can test (51, 52) to check:
 
-$$ 
+```math
 51(52) = 2652 \neq 2624
-$$
+```
 
 ## Final Answer
 
